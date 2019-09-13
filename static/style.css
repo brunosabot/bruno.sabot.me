@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  opacity: 0;
+  transition: opacity .4s;
+}
+body.active {
+  opacity: 1;
+}
+
+.personal {
+  background-image: url(./me.jpg);
+  background-position: right top;
+  background-size: cover;
+  flex-basis: 40%;
+  height: 100%;
+  overflow: auto;
+  padding: 74px 80px 80px 80px;
+  width: 40%;
+}
+.language-tag {
+  border: 1px solid #8c8c8c;
+  border-radius: 3px;
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 1em;
+  margin-top: -3px;
+  opacity: 0.5;
+  padding: 7px 12px;
+  position: absolute;
+  right: 80px;
+  text-decoration: none;
+  top: 80px;
+}
+.personal-social {
+  color: #646464;
+  font-size: 12px;
+  line-height: 24px;
+}
+.personal-social__heading {
+}
+.personal-social__links {
+  line-height: 24px;
+}
+.personal-social__link {
+  color: #ab804d;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.personal-heading__1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 38px;
+}
+.personal-heading__2 {
+  color: #8f8f8f;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 28px;
+}
+.personal-heading__3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 28px;
+}
+.personal-contact {
+  display: flex;
+  margin-top: 36px;
+}
+.personal-contact__phone {
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
+  margin-right: 48px;
+}
+.personal-contact__mail {
+  color: #ab804d;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.life-experiences {
+  flex-basis: 60%;
+  height: 100%;
+  overflow: auto;
+  padding: 80px;
+  width: 60%;
+}
+.life-experiences__title {
+  color: #212121;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: -6px 0;
+}
+.professional-experiences {
+  margin-bottom: 80px;
+}
+
+.block {
+  padding-top: 24px;
+}
+.block__name {
+  color: #864901;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 0;
+}
+.block__subtitle {
+  color: #4f4f4f;
+  font-size: 13px;
+  line-height: 24px;
+}
+.block__detail {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.block__detail-item {
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    display: block
+  }
+  .personal, .life-experiences {
+    height: auto;
+    padding-left: 140px;
+    padding-right: 140px;
+    width: 100%;
+  }
+  .language-tag {
+    margin-top: -3px;
+    right: 140px;
+  }
+}
+@media (max-width: 750px) {
+  body {
+    display: block;
+  }
+  .personal, .life-experiences {
+    height: auto;
+    padding: 50px 20px;
+    width: 100%;
+  }
+  .language-tag {
+    margin-top: 0;
+    right: 20px;
+    top: 20px;
+  }
+  .personal-heading__2 {
+    font-size: 16px;
+  }
+  .personal-heading__3  {
+    display: none;
+  }
+}
+@media print {
+  body {
+    display: block
+  }
+  .personal, .life-experiences {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  .personal {
+    background-image: none;
+  }
+  .language-tag {
+    display: none;
+  }
+  .personal-social {
+    display: none;
+  }
+  .personal-heading__1 {
+    color: #212121;
+    margin-top: 0;
+  }
+  .personal-heading__3 {
+    color: #212121;
+  }
+  .personal-contact__phone {
+    color: #212121;
+  }
+  .professional-experiences {
+    margin-bottom: 40px;
+  }
+}

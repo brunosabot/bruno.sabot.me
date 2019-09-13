@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Bruno Sabot
+Contact: bruno [at] sabot [dot] me
+Twitter: @brunosabot
+Location: Bordeaux, France
+
+/* SITE */
+Last update: 2019/06/03
+Language: French / English
+Standards: HTML5, CSS3
+Components: Google Fonts, Google Analytics
+IDE: VSCode
